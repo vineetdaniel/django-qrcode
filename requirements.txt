@@ -1,3 +1,4 @@
+django_heroku
 gunicorn
 asn1crypto==0.24.0
 chardet==3.0.4
