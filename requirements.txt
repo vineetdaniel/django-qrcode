@@ -1,6 +1,6 @@
 asn1crypto==0.24.0
 chardet==3.0.4
-cliapp==1.20170827
+cliapp==1.0.7
 cmdtest==0.32
 colorama==0.4.0
 cryptography==2.1.4
