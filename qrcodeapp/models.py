@@ -4,6 +4,7 @@ from django.core.files import File
 
 from django.db import models
 import qrcode
+from django.contrib.staticfiles.templatetags.staticfiles import static
 
 # Create your models here.
 class Qrdata(models.Model):
@@ -29,7 +30,8 @@ class Qrdata(models.Model):
 
     def save(self, *args, **kwargs):
         o_no = str(self.order_item_no)
-        path = "/mnt/c/Users/2200002708/Development/python/django/demo_sarkaari/media" + str(self.order_item_no) + ".png"
+        fname = str(self.order_item_no) + ".png"
+        path =  static(fname)
         qr = qrcode.QRCode(
             version=1,
             error_correction=qrcode.constants.ERROR_CORRECT_L,
