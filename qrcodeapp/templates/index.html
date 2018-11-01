@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>demo qr code</h1>
+<ul>
+    <li>
+        {% for d in data %}
+        <div>
+        <h1><a href= "">{{ d.image }}</a></h1>
+        <a>  <img src="{{ d.image.url }}" height="420"></a>
+    </div>
+        {% endfor %}
+    </li>
+</ul> 
+{% endblock %}
