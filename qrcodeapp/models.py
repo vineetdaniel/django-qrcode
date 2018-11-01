@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.core.files import File
-
+from django.conf import settings
 from django.db import models
 import qrcode
 from django.contrib.staticfiles.templatetags.staticfiles import static
@@ -31,7 +31,7 @@ class Qrdata(models.Model):
     def save(self, *args, **kwargs):
         o_no = str(self.order_item_no)
         fname = str(self.order_item_no) + ".png"
-        path =  static(fname)
+        path =  settings.STATIC_ROOT + fname
         qr = qrcode.QRCode(
             version=1,
             error_correction=qrcode.constants.ERROR_CORRECT_L,
