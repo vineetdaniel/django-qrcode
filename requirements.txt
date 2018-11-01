@@ -21,4 +21,3 @@ PyYAML==3.12
 qrcode==6.0
 SecretStorage==2.3.1
 six==1.11.0
-ttystatus==0.38
