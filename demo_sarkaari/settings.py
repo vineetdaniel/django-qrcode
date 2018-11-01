@@ -79,14 +79,24 @@ WSGI_APPLICATION = 'demo_sarkaari.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'dbname',
+#         'USER': 'postgres',
+#         'PASSWORD': '513358',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbname',
-        'USER': 'postgres',
-        'PASSWORD': '513358',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'd84rq3p9tkdmvb',
+        'USER': 'wnfthxdydmqcxr',
+        'PASSWORD': '52611107e8c93b9f6b892f27dea9924ac6b8b98e70e00550689cf1f569044404',
+        'HOST': 'ec2-184-73-222-192.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
