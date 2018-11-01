@@ -6,9 +6,6 @@ colorama==0.4.0
 cryptography==2.1.4
 Django==1.11.16
 enum34==1.1.6
-gyp
-idna==2.6
-ipaddress==1.0.17
 keyring==10.6.0
 keyrings.alt==3.0
 Markdown==2.6.9
