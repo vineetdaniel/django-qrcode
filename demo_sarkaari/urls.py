@@ -22,6 +22,6 @@ from django.conf import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^qrcode/', include('qrcodeapp.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] +  static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
