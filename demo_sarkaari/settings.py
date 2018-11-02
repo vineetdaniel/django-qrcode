@@ -138,8 +138,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 STATIC_ROOT = BASE_DIR + '/static/'
 STATIC_URL = '/static/'
-MEDIA_ROOT= BASE_DIR + '/media/'
-MEDIA_URL = '/media/'
+MEDIA_ROOT= BASE_DIR + '/static/media/'
+MEDIA_URL = '/static/media/'
 # django_heroku.settings(locals())
 # STATICFILES_DIRS = (
 
